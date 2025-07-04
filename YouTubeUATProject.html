@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Metrics Analysis for UAT</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to your external CSS file for styling -->
+    <style>
+        /* Basic inline styling */
+        .container {
+            margin: 20px;
+        }
+        header {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .project-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .project-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .tags {
+            margin-bottom: 20px;
+        }
+        .tags span {
+            display: inline-block;
+            background-color: #2c3e50;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+        .image-container figcaption {
+            font-style: italic;
+            margin-top: 10px;
+        }
+        .description {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .pdf-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .pdf-container iframe {
+            width: 100%;
+            height: 1000px;
+        }
+        .github-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .github-link a {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        .github-link a:hover {
+            background-color: #555;
+        }
+    </style>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NBP6JRZL');</script>
+    <!-- End Google Tag Manager -->
+    
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <div class="project-header">
+                <h1>YouTube Metrics Analysis for UAT</h1>
+                <div class="tags">
+                    <span>Data Preparation</span>
+                    <span>Statistical Analysis</span>
+                    <span>Regression Analysis</span>
+                    <span>Python</span>
+                    <span>Data Visualization</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="index.html">Main Page</a>
+            <a href="PortfolioResumePage.html" target="_blank">Resume</a>
+        </nav>
+
+    </div>
+        
+
+        <!-- Image Section -->
+        <div class="image-container">
+            <figure>
+                <img src="assets/YouTubeMetrics_UAT_ViewsDist.png" alt="Project Screenshot">
+                <figcaption>A histogram indicating the distribution of views across all UAT videos.</figcaption>
+            </figure>
+        </div>
+
+        <!-- Project Description Section -->
+        <section class="description">
+            <h2>Project Overview</h2>
+            <p>
+                This project explores the use of linear regression analysis to predict YouTube video performance (in views) based on multiple factors.
+                The dataset includes features such as tags used, video length, video title, release date, and more.
+                I utilized Python libraries including Pandas, Matplotlib, and Seaborn to clean, analyze, and visualize the data. I used Scikit-learn for regression analysis and model performance testing.
+            </p>
+        </section>
+
+        <!-- PDF Section (if any) -->
+        <div class="pdf-container">
+            <h3>Project Documentation (PDF)</h3>
+            <iframe src="assets/Willets_ProjectDoc_YoutubeMetricsUAT.pdf" frameborder="0"></iframe>
+        </div>
+
+        <!-- GitHub Link -->
+        <div class="github-link">
+            <a href="https://github.com/AveryWillets/Metrics-Analysis-YouTube-UAT" target="_blank">View GitHub Repository</a>
+        </div>
+
+</body>
+</html>

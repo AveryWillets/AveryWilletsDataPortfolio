@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to your external CSS file for styling -->
+    <style>
+        /* Basic inline styling */
+        .container {
+            margin: 20px;
+        }
+        header {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .project-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .project-header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .tags {
+            margin-bottom: 20px;
+        }
+        .tags span {
+            display: inline-block;
+            background-color: #2c3e50;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-container img {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+        .image-container figcaption {
+            font-style: italic;
+            margin-top: 10px;
+        }
+        .description {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        #resume embed {
+            border: 1px solid #ddd;
+            margin-top: 20px;
+        }
+        .pdf-container iframe {
+            width: 100%;
+            height: 1000px;
+        }
+        .download-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .download-link a {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        .download-link a:hover {
+            background-color: #555;
+        }
+        
+    </style>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NBP6JRZL');</script>
+    <!-- End Google Tag Manager -->
+    
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <div class="project-header">
+                <h1>My Resume</h1>
+            </div>
+        </header>
+    
+        <!-- Navigation bar -->
+        <nav>
+            <a href="index.html">Main Page</a>
+            <a href="PortfolioResumePage.html" target="_blank">Resume</a>
+        </nav>
+    </div>
+    
+
+    <section id="resume">
+        <embed src="assets/Willets_DataResume_jul2025.pdf" width="100%" height="1000px" type="application/pdf">
+        <div class="download-link">
+            <a href="assets/Willets_DataResume_jul2025.pdf" download class="download-btn">Download Resume</a>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+/*styles.css*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecfbd4;
+    overflow-x: hidden;
+}
+header {
+    background-color: #252c1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+}
+nav {
+    text-align: center;
+    background-color: #11150a;
+    padding: 10px;
+    border-radius: 8px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+section {
+    margin: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.about img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+#about-paragraph {
+    text-align: center;
+}
+
+.container {
+    margin: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.container a {
+    border-radius: 8px;
+}
+
+
+
+
+/*.skills, .education {
+    display: flex;
+    flex-wrap: wrap;
+}
+*/
+
+
+
+
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add spacing between sections */
+    padding: 20px;
+}
+
+.skills-container {
+    width: 100%;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.skills-container ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.skills-container .item {
+    background-color: #ecfbd4;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;  /* Stack <h3> above <p> */
+    width: 100%;  
+    margin: 0 auto;
+    box-sizing: border-box; 
+}
+
+.skills-container .item:hover {
+    transform: translateY(-5px);
+}
+
+.skills-container .item h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.skills-container .item p {
+    font-size: 0.95rem;
+    color: #555
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .skills-container .item {
+        width: 100%; /* Stack items vertically on smaller screens */
+    }
+}
+
+
+
+
+
+
+/* Container for all projects */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 2rem; /* Space between project cards */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* SPECIAL PROJECTS CONTAINER FOR BOARDS PAGE */
+.projects-container.two-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+}
+
+/* Project cards styling */
+.project-card {
+    flex: 1 1 300px;
+    max-width: 320px;
+    border: 1px solid #ccc; /* Light border around each project card */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevent content overflow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+}
+
+/* Add hover effect to scale the project card */
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Style for the preview image */
+.project-image {
+    width: 100%; /* Make the image fill the width of the card */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+    transition: opacity 0.3s ease; /* Smooth fade-in effect */
+}
+
+/* Change the image opacity when hovered */
+.project-card:hover .project-image {
+    opacity: 0.8;
+}
+
+/* Style for the project name */
+.project-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    background-color: #f4f4f4; /* Light background for the name */
+    margin: 0;
+    color: #333; /* Dark text for better readability */
+}
+
+#project-paragraph {
+    text-align: center;
+}
+
+/* Optional: Style for links (removes default styling) */
+.project-card a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from parent */
+}
+
+#objective-paragraph {
+    text-align: center;
+}
+
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .projects-container {
+        padding: 10px;
+        margin: 0 auto;
+        gap: 20px
+}
+
+
+    
+section {
+margin: 0px;
+margin-bottom: 0px;
+padding: 0px;
+}
+}
+
+
+.education div {
+    display: block;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+.education-card {
+    background: #ecfbd4;
+    border-radius: 8px;
+    padding: 16px;
+    transition: transform 0.3s ease;
+    text-align: left;
+    margin: 1rem;
+}
+
+.bachelor-card {
+    font-size: 1.1rem;
+    padding: 24px;
+    flex: 1 1 60%;
+}
+
+.associate-card {
+    font-size: 1rem;
+    padding: 16px;
+    flex: 1 1 40%
+}
+
+.education-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .education-wrapper {
+        flex-direction: column;
+    }
+}
+
+.education-card:hover {
+    transform: scale(1.05);
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+
