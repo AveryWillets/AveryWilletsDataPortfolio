@@ -138,7 +138,12 @@ h2 {
 
 
 
-
+.projects {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
 
 
 /* Container for all projects */
@@ -233,10 +238,197 @@ padding: 0px;
 }
 
 
-.education div {
+
+.project-page-wrapper {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.left-col, .right-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-goals-tools-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-goals-card,
+.project-tools-card,
+.project-desc-card,
+.project-link-card,
+.project-doc-card {
+    flex: 1;
+}
+
+.project-goals-card {
+    background-color: #ecfbd4;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;  /* Stack <h3> above <p> */
+    width: 100%;  
+    margin: 0 auto;
+    box-sizing: border-box; 
+}
+
+.project-tools-card {
+    background-color: #ecfbd4;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;  /* Stack <h3> above <p> */
+    width: 100%;  
+    margin: 0 auto;
+    box-sizing: border-box; 
+}
+
+
+.project-desc-card {
+    background: #ecfbd4;
+    border-radius: 8px;
+    padding: 16px;
+    transition: transform 0.3s ease;
+    text-align: left;
+    margin: 1rem;
+    align-items: center;
+}
+
+.project-desc-card :hover {
+    transform: scale(1.05);
+}
+
+.project-desc-graybox {
+    background-color: #eeeeee;
+    border-radius: 8px;
+    padding: 8px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    margin: 0.5rem;
+    align-items: center;
+}
+
+.project-desc-graybox :hover {
+    transform: scale(1.05);
+}
+
+
+/* .project-right-col {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+} */
+
+.project-link-card {
+    background-color: #ecfbd4;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;  /* Stack <h3> above <p> */
+    width: 100%;  
+    margin: 0 auto;
+    box-sizing: border-box; 
+}
+
+
+.project-doc-card {
+    background-color: #ecfbd4;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;  /* Stack <h3> above <p> */
+    width: 100%;  
+    margin: 0 auto;
+    box-sizing: border-box; 
+}
+
+/*Styling for PDF to prevent unwanted height*/
+.project-doc-container embed,
+.project-doc-container iframe,
+.project-doc-container object {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    border: none;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .project-page-wrapper {
+        flex-direction: column;
+    }
+
+    .left-col,
+    .right-col {
+        width: 100%;
+    }
+}
+
+/* About me graybox */
+.about-me-graybox {
+    background-color: #eeeeee;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;  /* Stack <h3> above <p> */
+    width: 100%;  
+    margin: 0 auto;
+    box-sizing: border-box; 
+}
+
+/* About me graybox transition: change to effect box, not items within box */
+/* .about-me-graybox :hover {
+    transform: scale(1.05);
+} */
+
+/* EDUCATION SECTION */
+.education .education-entry {
     display: block;
     margin-right: 20px;
     margin-bottom: 15px;
+}
+
+.education-container {
+    display: flex;
+    gap: 1rem;
+    max-width: 1000px;
+    align-items: stretch;
+    margin: 0 auto;
+}
+
+.bachelors-container, .associates-container {
+    flex: 1;
+}
+
+/* .bachelors-container .education-card {
+    margin: 0 auto;
+    height: 100%;
+} */
+
+.associates-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    gap: 1rem;
 }
 
 .education-card {
@@ -276,6 +468,36 @@ padding: 0px;
     transform: scale(1.05);
 }
 
+/* SOCIALS SECTION */
+.socials-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .socials-wrapper {
+        flex-direction: column;
+    }
+}
+
+.socials-card {
+    background: #ecfbd4;
+    border-radius: 8px;
+    padding: 16px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    margin: 1rem;
+
+    font-size: 1rem;
+    padding: 16px;
+    flex: 1 1 20%;
+}
+
+.socials-card:hover {
+    transform: scale(1.05);
+}
+
 
 footer {
     text-align: center;
@@ -285,3 +507,143 @@ footer {
 }
 
 
+.resume-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1000px;
+    align-items: stretch;
+    margin: 0 auto;
+}
+
+.resume-doc-container {
+    flex: 2;
+    max-height: 1000px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+/*Styling for PDF to prevent unwanted height*/
+.resume-doc-container embed,
+.resume-doc-container iframe,
+.resume-doc-container object {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    border: none;
+    display: block;
+}
+
+.resume-doc-container embed {
+    height: 600px;
+}
+
+.resume-desc-container {
+    flex: 1;
+    flex-direction: column;
+}
+
+
+.resume-desc-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    gap: 1rem;
+}
+
+
+
+
+.resume-card {
+    background: #ecfbd4;
+    border-radius: 8px;
+    padding: 16px;
+    transition: transform 0.3s ease;
+    text-align: left;
+    margin: 1rem;
+    align-items: center;
+}
+
+.resume-card {
+    font-size: 1rem;
+    padding: 16px;
+    flex: 1 1 40%
+}
+
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+    }
+}
+
+.resume-card:hover {
+    transform: scale(1.05);
+}
+
+.resume-cert-card {
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 8px;
+    transition: transform 0.3s ease;
+    text-align: left;
+    margin: 0.5rem;
+    align-items: center;
+}
+
+.resume-cert-card:hover {
+    transform: scale(1.05);
+}
+
+.download-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+.download-link a {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+.download-link a:hover {
+    background-color: #555;
+} 
+
+
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.image-container img {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+.image-container figcaption {
+    font-style: italic;
+    margin-top: 10px;
+}
+.description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.github-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+.github-link a {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+.github-link a:hover {
+    background-color: #555;
+}
