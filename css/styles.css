@@ -307,10 +307,10 @@ padding: 0px;
     align-items: center;
 }
 
-/* Commented out for better UX */
-/* .project-desc-card :hover {
+
+.project-desc-card:hover {
     transform: scale(1.05);
-} */
+}
 
 .project-desc-graybox {
     background-color: #eeeeee;
