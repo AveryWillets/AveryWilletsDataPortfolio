@@ -310,6 +310,7 @@ padding: 0px;
 
 .project-desc-card:hover {
     transform: scale(1.05);
+    transform-origin: center;
 }
 
 .project-desc-graybox {
