@@ -322,8 +322,9 @@ padding: 0px;
     align-items: center;
 }
 
-.project-desc-graybox :hover {
+.project-desc-graybox:hover {
     transform: scale(1.05);
+    transform-origin: center;
 }
 
 
