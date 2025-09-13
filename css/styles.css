@@ -520,7 +520,7 @@ footer {
 }
 
 .resume-doc-container {
-    flex: 2;
+    flex: 1;
     max-height: 1000px;
     overflow: hidden;
     position: relative;
@@ -687,3 +687,4 @@ footer {
     height: 100%;
     border: none;
 }
+
