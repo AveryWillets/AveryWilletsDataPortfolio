@@ -41,6 +41,13 @@ h2 {
     margin-bottom: 20px;
     color: #333;
 }
+
+header-flex-container {
+    display: flex;
+    flex-shrink: 1;
+}    
+
+
 .about img {
     display: block;
     margin: auto;
@@ -687,4 +694,5 @@ footer {
     height: 100%;
     border: none;
 }
+
 
