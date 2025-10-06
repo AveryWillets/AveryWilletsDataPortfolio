@@ -42,11 +42,19 @@ h2 {
     color: #333;
 }
 
-header-flex-container {
+.header-flex-container {
     display: flex;
-    flex-shrink: 1;
-}    
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}  
 
+.logo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 .about img {
     display: block;
@@ -695,4 +703,34 @@ footer {
     border: none;
 }
 
+/*Styling for mobile*/
+@media (max-width: 768px) {
+  .container, section {
+    margin: 10px;
+    padding: 10px;
+  }
 
+  .header-flex-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .project-card {
+    max-width: 100%;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*Global resizing for all browsers*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
