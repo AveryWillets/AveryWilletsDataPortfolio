@@ -523,6 +523,12 @@ padding: 0px;
     transform: scale(1.05);
 }
 
+.socials-card .item {
+    width: 50px;
+    height: auto;
+    margin-bottom: 16px; 
+}
+
 
 footer {
     text-align: center;
@@ -748,6 +754,7 @@ footer {
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
 
 
 
