@@ -532,8 +532,7 @@ padding: 0px;
 
 .socials-logo {
     width: 60px;
-    height: auto;
-    padding: 16px;  
+    height: auto; 
 }
 
 
@@ -761,6 +760,7 @@ footer {
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
 
 
 
