@@ -442,6 +442,7 @@ padding: 0px;
 
 .bachelors-container, .associates-container {
     flex: 1;
+    align-items: center;
 }
 
 /* .bachelors-container .education-card {
@@ -760,6 +761,7 @@ footer {
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
 
 
 
