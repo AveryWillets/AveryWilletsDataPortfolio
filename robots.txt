@@ -1,0 +1,4 @@
+Sitemap: https://averywillets.github.io/AveryWilletsDataPortfolio/sitemap.xml
+
+User-agent: *
+Disallow: 
